@@ -12,6 +12,10 @@ export default function CountUp({ value, duration = 1800 }: Props) {
 
   useEffect(() => {
     if (!inView) return
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setDisplay(value)
+      return
+    }
     let frame: number
     const start = performance.now()
     const tick = (now: number) => {

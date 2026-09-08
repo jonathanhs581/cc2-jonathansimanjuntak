@@ -273,7 +273,7 @@ export default function Home() {
             to="/login"
             className="mt-9 inline-flex items-center gap-2 rounded-full bg-amber-brand px-8 py-4 text-sm font-semibold uppercase tracking-[0.12em] text-navy-900 transition-colors hover:bg-amber-deep"
           >
-            Get in Touch
+            Client Login
             <ArrowIcon className="h-4 w-4" />
           </Link>
         </div>
