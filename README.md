@@ -8,6 +8,15 @@ Kumpulan tugas CC2. Satu repo, tiga bagian:
 | Company Profile (NusaDrill Energy) | [`companyprofile/`](./companyprofile) | https://cc2-jonathansimanjuntak.vercel.app |
 | LeetCode | [`leetcode/`](./leetcode) | — (screenshot solusi) |
 
+## 🔑 Demo Access — Company Profile (untuk review)
+
+```
+Email    : admin@nusadrill.co.id
+Password : password123
+```
+
+Login di `https://cc2-jonathansimanjuntak.vercel.app/login` untuk mencoba fitur Create Blog (tersimpan ke Backendless, langsung tampil di Blog List).
+
 ## Tech Stack
 
 - **React + Vite + TypeScript** (kedua web project)
