@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes kenburns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes scroll-hint {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(200%);
+  }
+}
+
+@keyframes line-grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@theme {
+  --color-navy-950: #070f1a;
+  --color-navy-900: #0a1420;
+  --color-navy-800: #0e1b2c;
+  --color-navy-700: #16273c;
+  --color-navy-600: #1f3a52;
+  --color-navy-100: #dbe4ee;
+  --color-amber-brand: #f5a623;
+  --color-amber-deep: #f5821f;
+  --color-mist: #f5f6f8;
+  --color-body: #6b7280;
+  --color-line: #e8ecf1;
+
+  --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Roboto Slab", "Roboto", ui-serif, serif;
+}
+
+@utility animate-rise-in {
+  animation: rise-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@utility animate-kenburns {
+  animation: kenburns 14s ease-out both;
+}
+
+@utility animate-line-grow {
+  animation: line-grow 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

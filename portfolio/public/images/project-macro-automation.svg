@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="Macro automation untuk 5 platform job listing">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#b08325"/><stop offset="100%" stop-color="#8a6418"/></linearGradient></defs>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <circle cx="700" cy="370" r="140" fill="#ffffff" opacity="0.08"/>
+  <circle cx="110" cy="80" r="100" fill="#ffffff" opacity="0.07"/>
+  <rect x="90" y="250" width="200" height="24" rx="6" fill="#ffffff" opacity="0.35"/>
+  <rect x="90" y="292" width="300" height="16" rx="5" fill="#ffffff" opacity="0.25"/>
+  <text x="90" y="200" font-family="Georgia, serif" font-size="52" font-weight="700" fill="#ffffff">Macro Automation</text>
+  <text x="92" y="236" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff" opacity="0.8">5 Job Listing Platforms · Ops</text>
+</svg>
