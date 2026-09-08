@@ -42,5 +42,3 @@ npm run dev
 ```
 
 Tanpa `.env`, aplikasi tetap berjalan dalam mode fallback (localStorage) untuk keperluan development.
-
-Detail lengkap setup Backendless (tabel, permissions, env): lihat [BACKENDLESS-SETUP.md](./BACKENDLESS-SETUP.md).
