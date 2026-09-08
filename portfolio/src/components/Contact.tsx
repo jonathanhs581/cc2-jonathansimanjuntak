@@ -22,8 +22,11 @@ function readDraft(): ContactForm {
   return EMPTY_FORM
 }
 
-async function sendMessage(_payload: ContactForm): Promise<void> {
-  await new Promise((resolve) => setTimeout(resolve, 1200))
+async function sendMessage(payload: ContactForm): Promise<void> {
+  const subject = encodeURIComponent(`Pesan dari portfolio — ${payload.name}`)
+  const body = encodeURIComponent(`${payload.message}\n\n—\n${payload.name}\n${payload.email}`)
+  window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`
+  await new Promise((resolve) => setTimeout(resolve, 800))
 }
 
 function Contact() {
@@ -234,7 +237,7 @@ function Contact() {
                 role="status"
                 className="mt-4 rounded-md border border-line border-l-4 border-l-accent-dark bg-white px-4 py-3 text-sm text-ink"
               >
-                Pesan terkirim! Terima kasih sudah menghubungi. Saya balas via email ya.
+                Aplikasi email dibuka — tinggal tekan kirim dari sana. Terima kasih sudah menghubungi!
               </p>
             )}
             {status === 'error' && (

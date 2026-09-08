@@ -52,7 +52,7 @@ function Navbar() {
         className="mx-auto flex h-24 max-w-[1400px] items-center justify-between px-6 sm:px-10 lg:px-20"
         aria-label="Navigasi utama"
       >
-        <a href="#hero" className={`font-display text-2xl font-bold tracking-tight ${isScrolled ? 'text-ink' : 'text-ink'}`}>
+        <a href="#hero" className={`font-display text-2xl font-bold tracking-tight ${isScrolled ? 'text-ink' : 'text-white md:text-ink'}`}>
           {profile.name.split(' ')[0]} {profile.name.split(' ')[1] ?? ''}
         </a>
 
@@ -72,7 +72,7 @@ function Navbar() {
 
         <button
           type="button"
-          className={`inline-flex h-11 w-11 items-center justify-center rounded-md transition-colors md:hidden ${isScrolled ? 'text-ink hover:bg-surface' : 'text-ink'}`}
+          className={`inline-flex h-11 w-11 items-center justify-center rounded-md transition-colors md:hidden ${isScrolled ? 'text-ink hover:bg-surface' : 'text-white hover:bg-white/10 md:text-ink md:hover:bg-surface'}`}
           aria-expanded={isOpen}
           aria-controls="mobile-menu"
           aria-label={isOpen ? 'Tutup menu navigasi' : 'Buka menu navigasi'}
