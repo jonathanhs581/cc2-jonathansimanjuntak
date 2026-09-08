@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+.has-custom-cursor,
+.has-custom-cursor * {
+  cursor: none;
+}
+
 @keyframes rise-in {
   from {
     opacity: 0;

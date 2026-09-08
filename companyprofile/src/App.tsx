@@ -3,6 +3,7 @@ import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import type { ReactNode } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import CustomCursor from './components/CustomCursor'
 import { useAuth } from './lib/auth'
 
 const Home = lazy(() => import('./pages/Home'))
@@ -59,6 +60,7 @@ function RequireAuth({ children }: { children: ReactNode }) {
 export default function App() {
   return (
     <>
+      <CustomCursor />
       <ScrollToTop />
       <Suspense fallback={<PageLoader />}>
         <Routes>
