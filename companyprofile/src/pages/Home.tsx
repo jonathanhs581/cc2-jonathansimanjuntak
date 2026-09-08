@@ -16,6 +16,8 @@ export default function Home() {
       <section className="relative flex min-h-svh items-center overflow-hidden">
         <img
           src="/images/hero-rig.webp"
+          srcSet="/images/hero-rig-mobile.webp 800w, /images/hero-rig.webp 1920w"
+          sizes="100vw"
           alt="Semi-submersible drilling rig docked in a harbor at low light"
           className="absolute inset-0 h-full w-full object-cover animate-kenburns"
           fetchPriority="high"
@@ -134,6 +136,8 @@ export default function Home() {
       <section className="relative overflow-hidden bg-navy-800 py-20 lg:py-28">
         <img
           src="/images/services-bg.webp"
+          srcSet="/images/services-bg-mobile.webp 800w, /images/services-bg.webp 1920w"
+          sizes="100vw"
           alt=""
           loading="lazy"
           className="absolute inset-0 h-full w-full object-cover opacity-20"

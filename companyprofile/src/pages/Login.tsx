@@ -33,6 +33,8 @@ export default function Login() {
       <div className="relative hidden lg:block">
         <img
           src="/images/services-bg.webp"
+          srcSet="/images/services-bg-mobile.webp 800w, /images/services-bg.webp 1920w"
+          sizes="100vw"
           alt="Offshore oil rig structure"
           className="absolute inset-0 h-full w-full object-cover"
         />

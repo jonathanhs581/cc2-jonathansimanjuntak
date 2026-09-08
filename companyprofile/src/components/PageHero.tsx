@@ -10,6 +10,8 @@ export default function PageHero({ title, crumb }: Props) {
     <section className="relative flex min-h-[46vh] items-end overflow-hidden bg-navy-900 pb-14 pt-32">
       <img
         src="/images/page-banner.webp"
+        srcSet="/images/page-banner-mobile.webp 800w, /images/page-banner.webp 1920w"
+        sizes="100vw"
         alt=""
         className="absolute inset-0 h-full w-full object-cover"
         loading="eager"
