@@ -5,7 +5,7 @@ Kumpulan tugas CC2. Satu repo, tiga bagian:
 | Tugas | Folder | Live Demo |
 |---|---|---|
 | Personal Portfolio | [`portfolio/`](./portfolio) | https://portofoliojonathan.vercel.app |
-| Company Profile (NusaDrill Energy) | [`companyprofile/`](./companyprofile) | https://companyprofile-jonathan.vercel.app |
+| Company Profile (NusaDrill Energy) | [`companyprofile/`](./companyprofile) | https://cc2-jonathansimanjuntak.vercel.app |
 | LeetCode | [`leetcode/`](./leetcode) | — (screenshot solusi) |
 
 ## Tech Stack
