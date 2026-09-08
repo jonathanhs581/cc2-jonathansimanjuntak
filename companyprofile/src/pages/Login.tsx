@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import type { FormEvent } from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { useAuth } from '../lib/auth'
 
 export default function Login() {
@@ -92,9 +92,9 @@ export default function Login() {
           </form>
           <p className="mt-6 text-center text-xs text-body">
             Not registered yet?{' '}
-            <Link to="/login" className="font-semibold text-amber-deep">
+            <a href="mailto:info@nusadrill.co.id" className="font-semibold text-amber-deep">
               Contact the administrator
-            </Link>
+            </a>
           </p>
         </div>
       </div>
