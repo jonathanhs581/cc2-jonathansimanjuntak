@@ -3,6 +3,7 @@ import SectionHeading from '../components/SectionHeading'
 import BlogCard from '../components/BlogCard'
 import Reveal from '../components/Reveal'
 import CountUp from '../components/CountUp'
+import CustomCursor from '../components/CustomCursor'
 import { ArrowIcon, CheckIcon, QuoteIcon } from '../components/icons'
 import { services, stats, testimonials } from '../data/content'
 import { usePosts } from '../lib/posts'
@@ -13,6 +14,7 @@ export default function Home() {
 
   return (
     <>
+      <CustomCursor />
       <section className="relative flex min-h-svh items-center overflow-hidden">
         <img
           src="/images/hero-rig.webp"
