@@ -1,6 +1,6 @@
 # CC2 — Jonathan Simanjuntak
 
-Kumpulan tugas CC2. Satu repo, tiga bagian:
+Repository ini berisi tugas-tugas CC2 yang mencakup personal portfolio, company profile website, dan dokumentasi solusi LeetCode.
 
 | Tugas | Folder | Live Demo |
 |---|---|---|
