@@ -22,10 +22,10 @@ export default function CustomCursor() {
     const ring = ringRef.current
     if (!dot || !ring) return
 
-    let mouseX = 0
-    let mouseY = 0
-    let ringX = 0
-    let ringY = 0
+    let mouseX = -100
+    let mouseY = -100
+    let ringX = -100
+    let ringY = -100
     let frame: number
 
     const onMove = (event: MouseEvent) => {
