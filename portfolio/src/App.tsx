@@ -11,8 +11,6 @@ import { ActiveSectionContext } from './context/ActiveSectionContext'
 import { useScrollSpy } from './hooks/useScrollSpy'
 import { SECTION_IDS } from './data/navigation'
 
-// Navbar + Hero + section di <main> + Footer.
-// Section aktif (scrollspy) dibagikan ke Navbar lewat Context.
 function App() {
   const activeSection = useScrollSpy(SECTION_IDS)
 

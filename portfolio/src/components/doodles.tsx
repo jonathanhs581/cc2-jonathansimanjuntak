@@ -1,6 +1,5 @@
 type DoodleProps = { className?: string }
 
-// hiasan coretan tangan; warna ngikut text-*, aria-hidden karena dekoratif
 export function SquiggleDoodle({ className }: DoodleProps) {
   return (
     <svg

@@ -34,12 +34,9 @@ function Stats() {
     const el = ref.current
     if (!el) return
 
-    // pakai scroll listener (bukan IntersectionObserver) supaya tetap
-    // terpicu saat user lompat langsung ke section bawah via anchor
     let raf = 0
     const check = () => {
       const rect = el.getBoundingClientRect()
-      // Trigger saat elemen masuk 85% bawah layar, ATAU sudah terlewat ke atas
       if (rect.top < window.innerHeight * 0.85) {
         setInView(true)
         window.removeEventListener('scroll', onScroll)
@@ -51,7 +48,7 @@ function Stats() {
     }
 
     window.addEventListener('scroll', onScroll, { passive: true })
-    check() // kasus: sudah terlihat saat mount
+    check()
 
     return () => {
       window.removeEventListener('scroll', onScroll)

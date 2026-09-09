@@ -3,7 +3,6 @@ import { GitHubIcon, LinkedInIcon, MailIcon } from './icons'
 import { SquiggleDoodle } from './doodles'
 
 function Hero() {
-  // nama ditampilkan dua baris
   const nameParts = profile.name.split(' ')
   const firstName = nameParts[0]
   const lastName = nameParts.slice(1).join(' ')
@@ -48,7 +47,6 @@ function Hero() {
 
   return (
     <section id="hero" aria-labelledby="hero-heading" className="relative scroll-mt-20">
-      {/* tinggi pas satu layar di desktop */}
       <div className="grid min-h-svh grid-cols-1 md:grid-cols-2 md:h-svh md:overflow-hidden">
         <div className="relative flex flex-col justify-center hero-gradient order-2 md:order-1 px-6 pb-16 pt-10 sm:px-10 md:py-0 lg:px-20 xl:px-28">
           <div className="relative mx-auto w-full max-w-xl md:mx-0">
@@ -79,14 +77,12 @@ function Hero() {
               </a>
             </div>
 
-            {/* Mobile social icons */}
             <ul className="mt-12 flex items-center gap-2 md:hidden">
               {socialLinks}
             </ul>
           </div>
         </div>
 
-        {/* foto memenuhi kolom kanan */}
         <div className="relative order-1 md:order-2 h-[50vh] md:h-full md:max-h-svh overflow-hidden">
           <img
             src={profile.photo}
@@ -97,7 +93,6 @@ function Hero() {
             decoding="async"
             className="h-full w-full object-cover object-top"
           />
-          {/* Desktop social icons (vertical on the far right) */}
           <ul className="absolute right-4 top-1/2 hidden -translate-y-1/2 flex-col items-center gap-4 md:flex lg:right-8 z-10">
             {socialLinks}
           </ul>
