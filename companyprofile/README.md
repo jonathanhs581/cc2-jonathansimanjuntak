@@ -29,8 +29,7 @@ Login di halaman `/login`, setelah itu artikel bisa dibuat di `/create-post` dan
 - Autentikasi via Backendless — `/create-post` dilindungi, redirect ke `/login` jika belum masuk
 - Blog tersimpan di Backendless Data Service, langsung tampil di Blog List
 - Teams di-fetch live dari randomuser.me API
-- Responsive (mobile-first), lazy-loaded routes, responsive images (`srcset`)
-- PageSpeed Insights: **Performance 100 (Desktop) / 90 (Mobile)**, SEO 100, Best Practices 100
+- Responsive desktop & mobile
 
 ## Menjalankan Lokal
 
